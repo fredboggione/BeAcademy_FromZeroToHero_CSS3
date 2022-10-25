@@ -1,0 +1,151 @@
+
+<!-- Exemplo utilizado na aula Fluxo de leitura e Especificidade  -->
+<!-- <div>
+
+    O fluxo de leitura da sua folha de estilo é de cima para baixo
+
+    Importante considerar:
+
+    1- Origem da folha de estilo;
+    2- Especificidade;
+    3- Importância;
+
+    Tipos de estilo
+
+    Inline -> tag style -> tag link
+
+    Especificidade
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./assets/style.css">
+
+        <style>
+            h1{
+                background:yellow;
+            }
+
+            #super-title{
+                background-color: red;
+            }
+
+            h1{
+                background: green;
+            }
+
+            .my-title-2{
+                background: yellow;
+            }
+
+            strong{
+                color: blueviolet;
+            }
+            
+            .my-text strong{
+                color: cyan;
+            }
+            
+        </style>
+
+    </head>
+    <body>
+
+        <h1 id="super-title">Testando Especificidade</h1>
+
+        <p class="my-text">Lorem ipsum dolor  <strong>sit amet consectetur</strong> elit. Quos odio maiores omnis culpa impedit dicta reiciendis earum, consequatur commodi adipisci perspiciatis animi facilis recusandae nisi, vero rerum quis! Aliquam, nemo!</p>
+
+        
+        <h1 class="my-title-2">Testando Especificidade</h1>
+
+        <p class="my-text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos odio  <strong>maiores omnis culpa</strong> dicta reiciendis earum, consequatur commodi adipisci perspiciatis animi facilis recusandae nisi, vero rerum quis! Aliquam, nemo!</p>
+
+    </body>
+    </html>
+</div> -->
+
+<!-- Exemplo utilizado na aula At Rules e Combinators-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/style.css">
+
+    <!-- Exemplo 1 - Utilizando Descendent Combinators 
+    <div>
+    <style>
+        body ul li {
+            background: green;
+            color: red;
+        }
+
+        body section div ul li {
+            background: blue;
+            color: yellow;
+        }
+    </style>
+    </div>
+    -->
+
+    <!-- Exemplo 2 - Utilizando child Combinators
+    <div>
+        
+        <style>
+            body > ul {
+                background-color: red;
+            }
+
+            div > ul {
+                background-color: blue;
+            }
+        </style>
+    </div> -->
+
+    <!-- Exemplo 3 Utilizando  Adjacent Sibling Combinators
+
+    <style>
+        h1 + p {
+            color: green;
+        }
+    </style> -->
+</head>
+<body>
+
+    <!-- Div para utilizar nos exemplos 1 e 2
+    <div>
+        <p>Teste</p>
+    </div>
+
+    <ul>
+        <li>Testando combinadores</li>
+    </ul>
+    <div>Outro formato</div>
+    <section>
+        <div>
+            <ul>
+                <li>Outro marcador</li>
+            </ul>
+        </div>
+    </section> -->
+
+<!-- Div para o terceiro Exemplo
+<div>
+<h1>Titulo</h1>
+<p>Mais um paragrafo</p>
+
+<button>Enviar</button>
+
+<p>Mais outro parágrafo</p>
+
+</div> -->
+
+</body>
+</html>
